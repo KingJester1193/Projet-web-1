@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/componant/nav.css">
+    <link rel="stylesheet" href="assets/css/componant/search-bar.css">
+    <link rel="stylesheet" href="assets/css/componant/hero-ban.css">
+    <link rel="stylesheet" href="assets/css/componant/grid.css">
+    <link rel="stylesheet" href="assets/css/componant/card.css">
+    <link rel="stylesheet" href="assets/css/componant/textImg.css">
+    <link rel="stylesheet" href="assets/css/componant/collectionLinkSVG.css">
+    <link rel="stylesheet" href="assets/css/componant/filter-bar.css">
+    <link rel="stylesheet" href="assets/css/componant/icone.css">
+<link rel="stylesheet" href="assets/css/componant/footer.css">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+
+    {% block header%}
+
+   <header>
+
+            <div class="nav__section">
+             
+                <div class="nav__logo"><img src="assets/media/img/logo-blanc.svg" alt="logo stampee"></div>
+        
+                <div id="myNav"  class="nav__link overlay" >
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <nav>
+                        <a href="">acceuil</a>
+
+                        <div class="nav__dropdown">
+                            <a href="" class="nav__dropbtn" >Encheres</a>
+
+                            <div class="nav__dropdown-content">
+                                <a href="">Nouvels Arrivages</a>
+                                <a href="">Favoris du Lord</a>
+                                <a href="">Derniere Chance</a>
+                            </div>
+                        </div>
+                        
+                        <div class="nav__dropdown">
+
+                            <a href="" class="nav__dropbtn">Nouvelles</a>
+
+                            <div class="nav__dropdown-content">
+                                <a href="">Les Nouvelles du Royaume</a>
+                                <a href="">Les Nouvelles du Continent</a>
+                                <a href="">Les Nouvelles du Nouveau-Monde</a>
+                                <a href="">Les Nouvelles du Bridges</a>
+                            
+                            </div>
+                        </div>
+
+                        <a href=""  class="nav__a__no-line">Le lord Stampee</a>
+                    </nav>
+
+            
+                </div>
+
+                <div class="search-bar">
+                <div class="btn__user">
+                   <a href="User/ajouter.html">s'inscrire</a>
+                   <a href="" class="nav__a__no-line">Se connecter</a>
+               </div>
+                    
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit" aria-label="search_btn"> <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 21 4 C 11.082241 4 3 12.082241 3 22 C 3 31.917759 11.082241 40 21 40 C 24.62177 40 27.99231 38.91393 30.820312 37.0625 L 43.378906 49.621094 L 47.621094 45.378906 L 35.224609 32.982422 C 37.581469 29.938384 39 26.13473 39 22 C 39 12.082241 30.917759 4 21 4 z M 21 8 C 28.756241 8 35 14.243759 35 22 C 35 29.756241 28.756241 36 21 36 C 13.243759 36 7 29.756241 7 22 C 7 14.243759 13.243759 8 21 8 z"/></svg></button>
+                    </form>
+                </div>
+
+            </div>
+            <span class="openbtn" onclick="openNav()">Menu</span>
+
+
+        <section class="hero-ban">
+             <section class="hero-ban__text-over">
+                <div class="hero-ban__text">
+                    <h2>Le site d'enchere reference pour philateliste.</h2>
+                    <h3>Joignez-vous a l'elite club de philatelie </h3>
+                </div>
+               <a href="">Joindre le Club</a>
+
+             </section>
+
+
+        </section>
+
+        </header>
+    {% endblock %}
+
+
+
+    {% block body%}
+
+
+    {% endblock %}
+
+
+
+    {% block footer%}
+
+    <footer>
+        <div class="foot__logo"><img src="assets/media/img/logo-blanc.svg" alt="logo stampee"></div>
+        <div class="foot__yellow-line"><img src="assets/media/img/ligne.svg" alt=""></div>
+        
+        <section class="foot__link">
+
+                <section class="foot__aide">
+                    <h3>Aide</h3>
+                    <ul>
+                        <li><a href="">profil</a></li>
+                        <li><a href="">Comment placer une offre</a></li>
+                        <li><a href="">Suivre une enchere</a></li>
+                        <li><a href="">Trouver une enchere</a></li>
+                        <li><a href="">F.A.Q.</a></li>
+                    </ul>
+                </section>
+
+                <section class="foot__infoLettre">
+                    <h3>Inscriver vous a l'infolettre</h3>
+                    <input type="email" name="email" id="email" placeholder="Entrez votre adresse electronique">
+                    <input type="submit" value="S'inscrire">
+                    
+                </section>
+
+                
+
+                <section class="foot__contact">
+                    <h3>Contactez-Nous</h3>
+                    <ul>
+                        <li><a href="">Angleterre</a></li>
+                        <li><a href="">Canada</a></li>
+                        <li><a href="">Australie</a></li>
+                        <li><a href="">Etas-Unis</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+        <section class="foot__fin">
+            <div class="foot__social-icon"></div>
+            <a href="">Termes & Conditions</a>
+            <small>copy right blablalbla</small>
+
+        </section>
+    </footer>
+
+    {% endblock %}
+    
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+.nav__section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__link{
+    display: flex;
+    flex-direction: row;
+   margin-right: 30px;
+    align-items: flex-end;
+}
+
+.nav__link a{
+
+    color: white;
+    padding: 10px;
+    border-right: 1px white solid;
+   font-family: 'Alegreya Sans', sans-serif;
+   font-size: 20px;
+}
+.nav__link  .btn__user{
+  margin-left:30px;
+}
+
+
+
+
+/* :not(:last-of-type) */
+
+
+
+.nav__logo{
+    
+   padding: 30px 0px 0px 30px;
+    width: 8rem;
+}
+.nav__link  .nav__a__no-line{
+  border-right: none;
+}
+
+/* -------------------------------menu accordeon------------------------------ */
+
+
+  
+/* ------------------------------- Fin menu accordeon------------------------------ */
+
+
+
+
+@media screen and (max-width:800px){
+
+  
+  .nav__logo{
+    width: 12rem;
+    margin-bottom: 25px;
+    padding: 0;
+    margin: 0 auto 25px auto;
+  }
+  .nav__link a{
+    margin-bottom: 25px;
+  }
+  
+
+
+.nav__section{
+
+ display: flex;
+ flex-direction: column;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+ justify-content: center;
+}
+}
+
+
+@media screen and (min-width:801px){
+  .openbtn{
+      display: none;
+  }
+}
+
+@media screen and (min-width:1080px){
+    .closebtn{
+      display: none;
+  }
+  
+.nav__dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
+/*Valeurs de position*/
+.nav__dropdown:hover .nav__dropdown-content {
+    display: block;
+    margin: 0;
+}
+
+
+  .nav__dropdown-content {
+    /*Valeurs de position*/
+      display: none;
+      position: absolute;
+    /*Valeurs du visuel*/
+      background-color:#c5801d;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 20;
+       border-radius: 10px;
+    }
+
+    .nav__dropdown-content a {
+      /*Valeurs de position*/
+        padding: 12px 36px 12px 10px;
+        display: block;
+        margin: 0;
+      /*Valeurs du visuel*/
+        text-align: left;
+        font-size: 15px;
+        line-height: 22px;
+        border:none;
+        font-family: 'Alegreya Sans', sans-serif;
+       font-size: 20px;
+      }
+      
+      /*Valeurs du visuel*/
+      .nav__dropdown-content a:hover {
+          background-color:#000049 ;
+          color: #ffffff;
+          border: none;
+      }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:801px) and  (max-width:1080px ){
+ .nav__logo{
+    width: 12rem;
+    margin:0 0 25px 25px;
+    padding: 0;
+
+  }
+  .nav__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .nav__link a{
+    margin-bottom: 25px;
+  }
+  .nav__link .btn__user{
+    margin-top: 100px;
+  }
+
+
+
+.nav__section{
+
+  display: flex;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  justify-content: flex-start; 
+}
+
+
+}
+
+@media screen and (max-width:1080px){
+  .nav__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .overlay{
+    height: 0;
+    width: 100%;
+    position: fixed; 
+    z-index: 40;
+    inset: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s; 
+
+}
+.overlay nav .nav__dropdown {
+  display: block;
+}
+.overlay nav .nav__dropdown .nav__dropdown-content a{
+  font-size: 20px;
+}
+
+
+
+  .overlay nav a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block; 
+    transition: 0.3s;
+    border: none;
+  }
+  .overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+  }
+  .overlay .closebtn{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  span {
+    margin-top: 15px;
+  }
+  .openbtn{
+    background-color: #EAEAD4;
+    position: fixed;
+    margin-right: 30px;
+    display: flex;
+    align-self: flex-end;
+    border:0px solid;
+    padding: 15px;
+    box-shadow: 2px 3px rgb(0 0 0 / 30%);
+    border-radius: 5px;
+    z-index: 30;
+  }
+}

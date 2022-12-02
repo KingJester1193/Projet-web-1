@@ -1,0 +1,85 @@
+.collectionLinkSVG{
+    display: flex;
+ 
+    margin: 120px 30px 50px 30px;
+    justify-content: space-between;
+    
+}
+.collectionLinkSVG .collectionLinkSVG__text{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    border-left: 2px solid #c5801d;
+    padding-left: 20px ;
+
+}
+
+.collectionLinkSVG div > h3{
+    font-family: 'Cinzel', serif;
+
+
+}
+.collectionLinkSVG div >  h4 {
+    font-family: 'Alegreya Sans', sans-serif;
+    margin:0;
+
+} 
+
+.collectionLinkSVG div > ul > li{
+    margin-top: 15px;
+    
+    font-family: 'Raleway', sans-serif;
+
+}
+.collectionLinkSVG div > a{
+    color: black;
+    text-decoration: underline 2px solid #c5801d;
+    text-underline-offset: 5px;
+    transition: color 0.6s, text-decoration 0.6s;
+    font-size: 20px;
+  
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.collectionLinkSVG div > a:hover{
+   
+    text-decoration: underline 2px solid #80021c;
+    color:#c5801d;
+
+
+}
+.collectionLinkSVG .SVG div{
+    text-align: center;
+}
+
+@media screen and (max-width:800px){
+    .collectionLinkSVG{
+        display: block;
+    }    
+    .collectionLinkSVG div > a{
+        margin-top: 15px;
+    }
+
+    .collectionLinkSVG .SVG{
+        display:none;
+
+    }
+}
+
+
+
+@media screen and (min-width:801px){
+    .collectionLinkSVG{
+        display: block;
+    }    
+    .collectionLinkSVG div > a{
+        margin-top: 15px;
+    }
+
+    .collectionLinkSVG .SVG{
+        display: flex;
+        justify-content: flex-end;
+
+    }
+}
+

@@ -1,0 +1,268 @@
+/* ----------------------------Card continent--------------------------------- */
+.card__continent{
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    height: 500px;
+    /* box-shadow: 3px 5px #000049a3; */
+    border-radius: 5px;
+    max-height: 500px;
+    box-sizing: border-box;
+   
+}
+
+.card__continent:not(.card__continent-pres) > a{
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.591);
+    width: 100%;
+    padding: 40px 0;
+
+    transition: padding  0.6s, font-size 0.6s;
+   
+}
+
+
+.card__continent:not(.card__continent-pres) > a:hover {
+    padding: 216px 0;
+    border-radius: 5px;
+    color: #c5801d;
+    font-size:60px;
+}
+
+.card__continent-pres{
+    border-top:25px solid #c5801d;
+    border-bottom:25px solid #c5801d;
+    background-color: #000049;
+    position: relative;
+    padding: 0px 25px 0px 25px;
+    display: flex;
+    align-items: center;
+    transition: border-top 0.6s, border-bottom 0.6s;
+}
+
+.card__continent-pres > h3  {
+    padding: 0px 10px 0px 10px;
+    transition: opacity 0.4s ;
+
+}
+.card__continent-pres > a{
+    position: absolute;
+    color: #c5801d;
+    font-size:50px; 
+
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.card__continent-pres:hover {
+    border-top:75px solid #c5801d;
+    border-bottom:75px solid #c5801d;
+}
+
+.card__continent-pres:hover > a{
+    opacity: 100%;
+}
+
+.card__continent-pres:hover > h3{
+opacity: 0;
+}
+
+
+
+.card__continent-eu{
+    background-image: url(../../media/img/eu-map.jpg);
+}
+.card__continent-ocea{
+    background-image: url(../../media/img/oceania-map.jpg);
+}
+.card__continent-afr{
+    background-image: url(../../media/img/africa-map.jpg);
+}
+.card__continent-ame{
+    background-image: url(../../media/img/amer-map.jpg);
+}
+.card__continent-asia{
+    background-image: url(../../media/img/asia-map.jpg);
+}
+
+
+/* ----------------------------Card nouvelle--------------------------------- */
+.card_titre-section{
+    margin: 120px 30px 30px 30px;
+    width: 33%;
+    padding-bottom: 5px;
+    border-bottom: #000049 3px solid;
+    font-family: 'Cinzel', serif;
+
+}
+
+.card__nouvelle > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    border-bottom: 2px solid #80021c ;
+    transition: border-bottom 0.6s;
+    font-family: 'Alegreya Sans', sans-serif;
+  
+
+}
+.card__nouvelle > a:hover{
+    border-bottom: #c5801d 6px solid;
+}
+
+.card__nouvelle h3{
+    transition:color 0.6s;
+    font-family: 'Cinzel', serif;
+    height: 100px;
+
+}
+.card__nouvelle:hover h3{
+    color: #c5801d;
+   
+}
+
+.card__nouvelle>a>img{
+    max-width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    
+}
+.card__nouvelle>a>small{
+    margin-bottom: 10px;
+    font-family: 'Alegreya Sans', sans-serif;
+ 
+}
+.card__nouvelle p{
+    font-family: 'Raleway', sans-serif;
+    height: 100px;
+  
+}
+.card__nouvelle>a>h5{
+    font-family: 'Alegreya Sans', sans-serif;
+ 
+    
+}
+
+
+
+/* ----------------------------Card auction--------------------------------- */
+.card__auction{
+    display: flex;
+    border-top: #c5801d 1px solid;
+    padding-top: 16px;
+    border-bottom: #c5801d 1px solid;
+    justify-content: space-between;
+    max-width: 100%;
+    min-width: 350px;
+}
+
+
+.card__auction a{
+    color: #000049;
+    max-width: 25ch;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+}
+.card__auction button a{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+.card__auction p{
+    font-size: 15px;
+    
+}
+.card__auction-titleBtn{
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-bottom: 16px
+}
+.card__auction-titleBtn div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card__auction-titleBtn img{
+    max-width:30px;
+}
+
+/* .card__auction-titleBtn button{
+    width : ;
+} */
+
+
+.card__auction-titleBtn > div > .icone__Lord{
+    max-width: 40px;
+}
+
+
+
+.card__auction-imgInfo{
+    width: 225px;
+}
+.card__auction>.card__auction-imgInfo>img{
+    max-width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+.card__auction-imgInfo > div{
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+     width: 100%;
+
+}
+.card__auction-imgInfo > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+/* .card__auction-imgInfo > div > div >*+*{
+    margin-left: 15px;
+} */
+
+
+
+@media screen and (max-width:700px){
+    .card__auction{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .card__auction-titleBtn>*{
+        margin-bottom: 15px;
+
+    }
+}
+@media screen and (max-width:960px){
+    .card__auction{
+        width: 100%;
+    }
+}
+
+    
+    @media screen and (max-width:1380px){
+      
+       .card__auction{
+        margin-bottom: 30px;
+   
+     }
+    }

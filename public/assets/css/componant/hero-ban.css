@@ -1,0 +1,78 @@
+  .hero-ban{
+    display: flex;
+    margin-top: 30px;
+    background-image:url(../../media/img/bannerStamp1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+    height: 500px;
+    
+
+
+}
+/*  .hero-ban__text-over{
+    position: absolute;
+} */
+
+
+.hero-ban__text-over{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    z-index: 10;
+    background-color:rgba(0, 0, 0, 0.591) ;
+    color: white;
+    
+    padding: 25px;
+}
+.hero-ban__text-over > .hero-ban__text > h2{
+    margin-bottom: 40px;
+}
+
+ .hero-ban__text > h2, .hero-ban__text > h3{
+
+    padding-left: 15px;
+    border-left: white solid 2px ;
+    font-family: 'Cinzel', serif;
+    align-items: flex-start;
+
+}
+
+
+
+
+
+.hero-ban__text-over a{
+ 
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 25px; 
+      background-color:#000049 ;
+    border:#c5801d solid 3px;
+    border-radius: 10px;
+   padding:10px;
+   align-self: flex-start;
+}
+
+@media screen and (max-width:800px){
+    .hero-ban__text-over{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1380px){
+    .hero-ban__text-over{
+        width: 50%;
+    }
+
+
+
+    
+
+}
+
+
+

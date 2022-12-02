@@ -1,0 +1,123 @@
+footer{
+    background-color: #000049 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin-top: 15px;
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+ 
+
+.foot__logo{
+    padding: 15px ;
+    width: 25%;
+}
+
+
+.foot__yellow-line{
+    width: 100%;
+}
+
+
+
+.foot__link{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+}
+.foot__link > * {
+    flex-basis: 33%;
+}
+
+.foot__link h3{
+    font-size: 25px;
+}
+.foot__link label{
+    font-size: 25px;
+}
+.foot__link ul {
+    list-style: none;
+    color: white;
+   
+}
+.foot__link li{
+     margin-bottom: 15px;
+}
+.foot__link a {
+ 
+    color: white;
+    font-size: 20px;
+}
+
+
+.foot__infoLettre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.foot__infoLettre > input[type=submit]{
+    margin-top: 25px;
+    padding: 5px;
+    width: 50%;
+    align-self: center;
+    background-color: #c5801d;
+    border:#80021c 3px solid;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 25px; 
+    padding: 10px;
+}
+.foot__infoLettre > input[type=email]{
+    padding: 5px;
+    width: 75%;
+    align-self: center;
+    border-radius: 10px;
+    border:#c5801d 3px solid;
+    padding: 10px;
+}
+.foot__infoLettre > input[type=email]:focus{
+    outline:none;
+}
+
+
+
+
+.foot__contact ul{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.foot__fin a{
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+.foot__fin{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+@media screen and (max-width:800px){
+    footer{
+        display: block;
+    }
+    .foot__logo{
+        width: 50%;
+        margin: 0 auto;
+    
+    }
+    .foot__link{
+        display: block;
+    }
+}

@@ -1,0 +1,41 @@
+body{
+    margin: 0 ;
+   
+}
+
+main{
+     max-width: 1800px; 
+     margin: 0 auto;
+    
+}
+header{
+     display: flex; 
+    margin: 0px;
+    background-color: #000049 ;
+    justify-content: space-between;
+
+    flex-flow: column;
+    /* max-width: 1800px; */
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+p{
+    max-width: 70ch;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+
+}
+
+
+
